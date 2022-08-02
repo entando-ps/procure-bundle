@@ -1,0 +1,17 @@
+code: per_il_cittadino
+parentCode: homepage
+titles:
+  en: Per il Cittadino
+  it: Per il Cittadino
+pageModel: redirect
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: redirect
+    config:
+      pageLink: servizi_per_il_cittadino
+    pos: 0

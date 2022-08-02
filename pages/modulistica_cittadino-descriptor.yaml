@@ -1,0 +1,17 @@
+code: modulistica_cittadino
+parentCode: per_il_cittadino
+titles:
+  en: Moduli
+  it: Moduli
+pageModel: redirect
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: redirect
+    config:
+      pageLink: moduli
+    pos: 0

@@ -1,0 +1,4 @@
+id: 15
+contentType: CTA
+description: Lista Glossario
+contentShape: "<div id=\"lista-howto\" class=\"collapse-div mb-5\" role=\"tablist\">\r\n    #foreach ($item in $content.lista) \r\n    <div class=\"collapse-header\" id=\"headingA$item.number.value\">\r\n        <button data-toggle=\"collapse\" data-target=\"#accordion$item.number.value\" aria-expanded=\"false\" aria-controls=\"accordion$item.number.value\">\r\n           $item.title.text\r\n        </button>\r\n    </div>\r\n    <div id=\"accordion$item.number.value\" class=\"collapse\" role=\"tabpanel\" aria-labelledby=\"headingA$item.number.value\" data-parent=\"#lista-howto\">\r\n        <div class=\"collapse-body\">\r\n           $item.abstract.text\r\n        </div>\r\n    </div>\r\n    #end\r\n</div>"

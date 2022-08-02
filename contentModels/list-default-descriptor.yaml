@@ -1,0 +1,4 @@
+id: 31
+contentType: CNG
+description: List Default
+contentShape: "<li>\r\n      <a href=\"$content.getContentOnPageLink(\"dettaglio_comefareper\")&modelId=32&$content.titolo.text.replace(\"%20\", \"+\")\">\r\n        <div class=\"it-right-zone\">\r\n          <span class=\"text\">$content.titolo.text</span>\r\n          <span class=\"it-multiple\">\r\n            <span class=\"metadata\"></span>\r\n           <svg class=\"icon\">\r\n              <use xlink:href=\"/procuradiroma/resources/static/img/sprite.svg#it-chevron-right\"></use>\r\n            </svg>\r\n          </span>\r\n        </div>\r\n      </a>\r\n</li>\r\n\r\n"

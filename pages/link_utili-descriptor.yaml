@@ -1,0 +1,34 @@
+code: link_utili
+parentCode: homepage
+titles:
+  en: Utilità
+  it: Utilità
+pageModel: internal-page
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: entando-widget-language_choose
+    config: null
+    pos: 0
+  - code: entando-widget-search_form
+    config: null
+    pos: 1
+  - code: Navigation_Bar_Settato
+    config:
+      navSpec: code(sezione_procura).subtree(1) + code(per_il_cittadino).subtree(1) + code(per_il_professionista).subtree(1)  + code(per_la_pubblica_amm).subtree(1) + code(sezione_come_fare_per).subtree(1)
+    pos: 2
+  - code: entando-widget-navigation_breadcrumbs
+    config: null
+    pos: 4
+  - code: content_viewer_list_links
+    config:
+      modelId: '20'
+      maxElemForItem: '8'
+      categories:
+        - link_utili
+      contentType: CTM
+    pos: 9

@@ -1,0 +1,75 @@
+code: homepage
+parentCode: homepage
+titles:
+  en: Home
+  it: Home
+pageModel: landing-page
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: entando-widget-language_choose
+    config: null
+    pos: 0
+  - code: entando-widget-search_form
+    config: null
+    pos: 1
+  - code: Navigation_Bar_Settato
+    config:
+      navSpec: code(sezione_procura).subtree(1) + code(per_il_cittadino).subtree(1) + code(per_il_professionista).subtree(1)  + code(per_la_pubblica_amm).subtree(1) + code(sezione_come_fare_per).subtree(1)
+    pos: 2
+  - code: content_viewer_list_carousel
+    config:
+      modelId: '182'
+      maxElements: '3'
+      contentType: CTM
+    pos: 5
+  - code: content_viewer
+    config:
+      modelId: '3'
+      contentId: CTA7085
+    pos: 6
+  - code: content_viewer_list
+    config:
+      modelId: '2001'
+      maxElemForItem: '3'
+      maxElements: '3'
+      categories:
+        - avvisi_eventi_comunicati
+      contentType: AEC
+      pageLink: avvisi_eventi_comunicati
+      filters:
+        - attributeFilter: true
+          key: data
+          order: DESC
+      linkDescr_it: Lista News
+      linkDescr_en: Lista News
+      title_it: News
+      title_en: News
+    pos: 7
+  - code: content_viewer_list_home_link
+    config:
+      modelId: '4'
+      maxElemForItem: '8'
+      linkDescr_it: Vedi tutti
+      linkDescr_en: See all
+      title_it: Utilità
+      title_en: Utility
+      categories:
+        - link_utili
+      contentType: CTM
+      pageLink: link_utili
+    pos: 8
+  - code: content_viewer
+    config:
+      modelId: '5'
+      contentId: CTA7113
+    pos: 9
+  - code: content_viewer
+    config:
+      modelId: '8'
+      contentId: CTA7118
+    pos: 10

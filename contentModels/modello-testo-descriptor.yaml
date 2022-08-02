@@ -1,0 +1,14 @@
+id: 9
+contentType: CNG
+description: Modello Testo
+contentShape: |-
+  <div class="card-wrapper">
+      <div class="card border-0">
+          <div class="card-body p-1">
+              <h3 class="card-title">
+                $content.Title.text
+              </h3>         
+              $content.MainBody.text                                                                         
+          </div>
+      </div>
+  </div>

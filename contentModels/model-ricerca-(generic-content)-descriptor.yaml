@@ -1,0 +1,4 @@
+id: 9999
+contentType: CNG
+description: Model Ricerca (Generic Content)
+contentShape: "<li>\r\n\t#if($content.Title.text)\r\n  <a href=\"$content.getContentOnPageLink(\"paginadettaglio\")&modelId=10001\">\r\n     <div class=\"it-right-zone\">\r\n         <span class=\"text\">$content.Title.text</span>\r\n         <span class=\"it-multiple\">\r\n         <span class=\"metadata\"></span>\r\n            <svg class=\"icon\">\r\n             <use xlink:href=\"/procuradiroma/resources/static/img/sprite.svg#it-chevron-right\"></use>\r\n            </svg>\r\n         </span>\r\n     </div>\r\n  </a>\r\n  #end\r\n</li>        \r\n\r\n\r\n"

@@ -1,0 +1,12 @@
+id: 10031
+contentType: DLD
+description: Lists - Default
+contentShape: |-
+  <article>
+  <h2>$content.Title.text</h2>
+  $content.ShortDescr.text
+  <p class="btn-group">
+    <a class="btn" href="$content.contentLink">$i18n.getLabel("DLD_GET_INFO")&nbsp;<i class="icon-info-sign"></i></a>
+    <a class="btn btn-primary" href="$content.File.attachPath">$i18n.getLabel("DLD_DOWNLOAD")&nbsp;<i class="icon-download-alt icon-white"></i></a>
+  </p>
+  </article>

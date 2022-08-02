@@ -1,0 +1,111 @@
+id: UFF7608
+typeCode: UFF
+description: Ufficio penale esempio
+mainGroup: free
+status: PUBLIC
+viewPage: paginadettaglio
+listModel: '331'
+defaultModel: '332'
+attributes:
+  - code: titolo
+    value: null
+    values:
+      it: Ufficio penale esempio
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: categoria
+    value: penale
+    values: {}
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: responsab
+    value: null
+    values:
+      it: Responsabile lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: orario
+    value: null
+    values:
+      it: Orario lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: mail
+    value: null
+    values:
+      it: Email lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: pec
+    value: null
+    values:
+      it: PEC lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: telefono
+    value: null
+    values:
+      it: Telefono lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: fax
+    value: null
+    values:
+      it: Fax lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: descr
+    value: null
+    values:
+      it: |
+        <p><strong>Descrizione:</strong> Lorem ipsum</p>
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: immagine
+    value: null
+    values: {}
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: sede
+    value: null
+    values:
+      it: Sede lorem ispum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: piano
+    value: null
+    values:
+      it: Piano lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: stanza
+    value: null
+    values:
+      it: Stanza lorem ipsum
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: url_sede
+    value: null
+    values: {}
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: cnts_uff
+    value: null
+    values: {}
+    elements: []
+    compositeelements: []
+    listelements: {}

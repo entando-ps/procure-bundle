@@ -1,0 +1,17 @@
+code: sezione_come_fare_per
+parentCode: homepage
+titles:
+  en: Come fare per
+  it: Come fare per
+pageModel: redirect
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: redirect
+    config:
+      pageLink: faq
+    pos: 0

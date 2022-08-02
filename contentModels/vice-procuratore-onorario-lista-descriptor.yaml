@@ -1,0 +1,4 @@
+id: 160
+contentType: VPO
+description: Vice Procuratore Onorario - lista
+contentShape: "#set($idContenuto = $content.getId())\r\n\r\n#set ($abstract_testo = $content.testo.text.replaceAll(\"<[^<>]+>\", \"\").trim())\r\n#set ($abstract_altre_info = $content.altre_info.text.replaceAll(\"<[^<>]+>\", \"\").trim())\r\n\r\n\r\n<div class=\"row-mod\" style=\"border-bottom:1px solid grey; margin-bottom:15px\">\r\n    <div class=\"col-sm12\" >\r\n\t\t\t <b>$content.titolo.text</b>\r\n    \t #if($abstract_testo != '' || $abstract_altre_info != '')\r\n          #if($abstract_testo != '')\r\n          \t<br /><i><b>$abstract_testo</b></i>  \r\n          #end\r\n          #if($abstract_altre_info != '')\r\n          \t<br /><span style=\"font-size:14px\">$abstract_altre_info</span>  \r\n          #end\r\n     \t\t#end\r\n \t </div>\r\n</div>"

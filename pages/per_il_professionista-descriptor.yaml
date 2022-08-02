@@ -1,0 +1,17 @@
+code: per_il_professionista
+parentCode: homepage
+titles:
+  en: Per il Professionista
+  it: Per il Professionista
+pageModel: redirect
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: redirect
+    config:
+      pageLink: servizi_per_il_professionista
+    pos: 0

@@ -1,0 +1,16 @@
+id: 20
+contentType: CTM
+description: Link Utili per pagine interne
+contentShape: |-
+  <div class="col-sm-12 col-lg-4 py-2">
+  <div class="card border-0 rounded">
+      <a title="$content.title.text" aria-label="Collegamento a pagina interna - $content.title.text" href="$content.link.destination">
+        <img class="img-fluid" data-src="" alt="$content.title.text" src="$content.img.getImagePath('0')" data-holder-rendered="true">
+      </a>
+      <div class="card-body">
+          <h5 class="card-title">$content.title.text</h5>           
+              <p class="card-text">$content.abstract.text </p>
+
+      </div>
+  </div>
+  </div>

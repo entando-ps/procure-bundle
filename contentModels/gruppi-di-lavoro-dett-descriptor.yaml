@@ -1,0 +1,4 @@
+id: 172
+contentType: GRL
+description: Gruppi di lavoro - dett
+contentShape: "#set($idContenuto_ = $content.getId())\r\n#set($pos = $idContenuto_.lastIndexOf('@'))\r\n\r\n#set($idContenuto = $idContenuto_.substring(3, $pos))\r\n\r\n\r\n<div class=\"accordion-page\">   \r\n\t<a href=\"#collapse-$idContenuto\" class=\"collapse\">$content.titolo.text</a>                \r\n\t<div style=\"display: none;\" id=\"collapse-$idContenuto\" class=\"collapsible\">\r\n\t\t$content.testo.text\r\n\t</div>\t\r\n</div>\r\n\r\n<br/>\r\n<div class=\"link-ricerca\">\r\n\t<p><a title=\"Vai all'elenco\" \r\n\thref=\"gruppi_lavoro.page\">Vai all'elenco</a></p>\r\n</div>"

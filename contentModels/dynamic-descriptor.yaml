@@ -1,0 +1,4 @@
+id: 1111
+contentType: CNG
+description: dynamic
+contentShape: "<div class=\"card-wrapper\">\r\n    <div class=\"card border-0\">\r\n        <div class=\"card-body p-1\">\r\n            <h3 class=\"card-title\">\r\n              $content.Title.text\r\n            </h3>         \r\n            $content.MainBody.text                                                                         \r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n  #foreach($item in $content.lista_comp)\r\n     \r\n     $item.testo.text\r\n     <a href=\"$item.link.destination\">\r\n     \t<span class=\"text\">$item.link.text</span>\r\n     </a>\r\n     <img class=\"\" src=\"$item.immagine.getImagePath('0')\" alt=\"$item.immagine.text\">\r\n  \r\n   #end\r\n\r\n\r\n"

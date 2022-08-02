@@ -1,0 +1,80 @@
+id: CTA7257
+typeCode: CTA
+description: FAQ - Domande frequenti
+mainGroup: free
+groups:
+  - free
+status: READY
+viewPage: paginadettaglio
+listModel: '99'
+defaultModel: '8'
+attributes:
+  - code: title
+    value: null
+    values:
+      it: FAQ - Domande frequenti
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: lista
+    value: null
+    values: {}
+    elements:
+      - code: lista
+        value: null
+        values: {}
+        elements: []
+        compositeelements:
+          - code: date
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: number
+            value: '1'
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: img
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink2
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: link
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: abstract
+            value: null
+            values:
+              it: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: title
+            value: null
+            values:
+              it: Lorem ipsum
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink1
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+        listelements: {}
+    compositeelements: []
+    listelements: {}

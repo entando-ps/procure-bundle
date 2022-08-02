@@ -1,0 +1,6 @@
+code: styke_menu_servizi
+titles:
+  en: Style Menu Servizi
+  it: Style Menu Servizi
+group: free
+customUi: "<style>\r\n\t.servizio {\r\n\t\tfont-size: 15px !important;\r\n\t}\r\n\t.h3_title {\r\n\t\tfont-weight: bold;\r\n\t\tborder-bottom: 1px solid #b1b1b3!important;\r\n\t}\r\n\t.h3_parag {\r\n\t\tfont-weight: bold;\r\n\t\tfont-size: 17px;\r\n\r\n\t}\r\n\r\n\t.-menu .link-list-wrapper ul li a {\r\n\t\tfont-size: 13px;\r\n\t\tline-height: 1.2 !important;\r\n\t\tpadding: 0 !important;\r\n\t\tdisplay: block;\r\n\t\tposition: relative;\r\n\t}\r\n.list-group {\r\n    list-style: none;\r\n    padding-left: 12px;\r\n    margin-top: 12px;\r\nflex-direction: unset;\r\nmargin-top:23px\r\n}\r\n\t.list-group-item {\r\n\t\tpadding: 5px;\r\n\t}\r\n.link-list-wrapper ul li a span {\r\n    color: #06c;\r\n    display: inline-block;\r\n    margin-right: 5px; \r\n}\r\n</style>"

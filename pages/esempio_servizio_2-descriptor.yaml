@@ -1,0 +1,34 @@
+code: esempio_servizio_2
+parentCode: servizi_per_il_professionista
+titles:
+  en: Esempio servizio Professionista
+  it: Esempio servizio Professionista
+pageModel: internal-page-servizi
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: true
+charset: utf-8
+status: published
+widgets:
+  - code: entando-widget-language_choose
+    config: null
+    pos: 0
+  - code: entando-widget-search_form
+    config: null
+    pos: 1
+  - code: Navigation_Bar_Settato
+    config:
+      navSpec: code(sezione_procura).subtree(1) + code(per_il_cittadino).subtree(1) + code(per_il_professionista).subtree(1)  + code(per_la_pubblica_amm).subtree(1) + code(sezione_come_fare_per).subtree(1)
+    pos: 2
+  - code: entando-widget-navigation_breadcrumbs
+    config: null
+    pos: 4
+  - code: content_viewer
+    config:
+      contentId: SRV7541
+    pos: 5
+  - code: Navigatin_bar_laterale_Prof
+    config:
+      navSpec: code(servizi_per_il_professionista).subtree(1)
+    pos: 6

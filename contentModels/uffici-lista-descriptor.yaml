@@ -1,0 +1,4 @@
+id: 330
+contentType: UFF
+description: Uffici - lista
+contentShape: "#set ($page_ufficio = false)\r\n#set ($page_ufficio = $content.categoria.text)\r\n<div class=\"row\" style=\"border-bottom: 1px solid grey; margin-bottom:15px\">\r\n    <div class=\"col-sm-12\"><a href=\"uff${page_ufficio}.page?contentId=$content.getId()\" title=\"\" tabindex=\"\">$content.titolo.text</a></div>\r\n    <div class=\"col-sm-12\">\r\n    \t   \t\t<i>Sede: </i> $content.sede.text - $content.piano.text<br />\r\n            <i>Stanza: </i>$content.stanza.text\r\n    </div>\r\n</div>    \r\n"

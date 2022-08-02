@@ -1,0 +1,24 @@
+id: GRL7309
+typeCode: GRL
+description: gruppo di lavoro ex
+mainGroup: free
+status: PUBLIC
+viewPage: paginadettaglio
+listModel: '171'
+defaultModel: '170'
+attributes:
+  - code: titolo
+    value: null
+    values:
+      it: gruppo di lavoro ex
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: testo
+    value: null
+    values:
+      it: |
+        <p>gruppo specializzato</p>
+    elements: []
+    compositeelements: []
+    listelements: {}

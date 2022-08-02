@@ -1,0 +1,4 @@
+id: 34
+contentType: SRV
+description: Servizio per l'utenza - Home
+contentShape: "#set ( $abstract = '')\r\n#if (!$content.cosa_e.text.isEmpty())\r\n #set ( $abstract = $content.cosa_e.text.replaceAll(\"<[^<>]+>\", \"\").trim())\r\n #if ($abstract.length() > 70)\r\n   #set ( $abstract = $abstract.substring(0, 70).replaceAll(\"&[^;]*$\", \"\").concat('...') )\r\n #end\r\n#end\r\n\r\n\r\n#set ($cat = $content.categoria.text)\r\n#set ($url = 'servizio_penale.page')\r\n\r\n#if($cat == 'civile')\r\n\t#set ($url = 'servizio_civile.page')\r\n#end\r\n#if($cat == 'altro')\r\n\t#set ($url = 'altro_servizio.page')\r\n#end\r\n#if($cat == 'per i collaboratori')\r\n\t#set ($url = 'servizio_collab.page')\r\n#end\r\n\r\n<li>\r\n\t<a href=\"${url}?contentId=$content.getId()\" title=\"\" tabindex=\"\"><b>\r\n  $content.titolo.text\r\n  </b></a>\r\n  <br/>\r\n  $abstract\r\n</li>"

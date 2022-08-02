@@ -1,0 +1,259 @@
+id: CTA7085
+typeCode: CTA
+description: HP - Lista Servizi
+mainGroup: free
+status: READY
+viewPage: paginadettaglio
+listModel: '99'
+defaultModel: '8'
+attributes:
+  - code: title
+    value: null
+    values:
+      it: Servizi
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: lista
+    value: null
+    values: {}
+    elements:
+      - code: lista
+        value: null
+        values: {}
+        elements: []
+        compositeelements:
+          - code: date
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: number
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: img
+            value: null
+            values:
+              it:
+                correlationCode: '7156'
+                name: PerCittadino.png
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink2
+            value:
+              symbolicDestination: '#!P;modulistica_cittadino!#'
+              urlDest: null
+              pageDest: modulistica_cittadino
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Moduli
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: link
+            value:
+              symbolicDestination: '#!P;per_il_cittadino!#'
+              urlDest: null
+              pageDest: per_il_cittadino
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Per il Cittadino
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: abstract
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: title
+            value: null
+            values:
+              it: Per il cittadino
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink1
+            value:
+              symbolicDestination: '#!P;servizi_per_il_cittadino!#'
+              urlDest: null
+              pageDest: servizi_per_il_cittadino
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Servizi
+            elements: []
+            compositeelements: []
+            listelements: {}
+        listelements: {}
+      - code: lista
+        value: null
+        values: {}
+        elements: []
+        compositeelements:
+          - code: date
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: number
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: img
+            value: null
+            values:
+              it:
+                correlationCode: '7138'
+                name: procura-professionista.jpg
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink2
+            value:
+              symbolicDestination: '#!P;modulistica_prof!#'
+              urlDest: null
+              pageDest: modulistica_prof
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Moduli
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: link
+            value:
+              symbolicDestination: '#!P;per_il_professionista!#'
+              urlDest: null
+              pageDest: per_il_professionista
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Per il Professionista
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: abstract
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: title
+            value: null
+            values:
+              it: Per il Professionista
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink1
+            value:
+              symbolicDestination: '#!P;servizi_per_il_professionista!#'
+              urlDest: null
+              pageDest: servizi_per_il_professionista
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Servizi
+            elements: []
+            compositeelements: []
+            listelements: {}
+        listelements: {}
+      - code: lista
+        value: null
+        values: {}
+        elements: []
+        compositeelements:
+          - code: date
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: number
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: img
+            value: null
+            values:
+              it:
+                correlationCode: '7137'
+                name: Perlamministrazione.jpg
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink2
+            value:
+              symbolicDestination: '#!P;mod_pubb_amm!#'
+              urlDest: null
+              pageDest: mod_pubb_amm
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Moduli
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: link
+            value:
+              symbolicDestination: '#!P;per_la_pubblica_amm!#'
+              urlDest: null
+              pageDest: per_la_pubblica_amm
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Per la Pubblica Amministrazione
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: abstract
+            value: null
+            values: {}
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: title
+            value: null
+            values:
+              it: Per l'Amministrazione
+            elements: []
+            compositeelements: []
+            listelements: {}
+          - code: subLink1
+            value:
+              symbolicDestination: '#!P;serv_pubbl_amm!#'
+              urlDest: null
+              pageDest: serv_pubbl_amm
+              contentDest: null
+              destType: 2
+              resourceDest: null
+            values:
+              it: Servizi
+            elements: []
+            compositeelements: []
+            listelements: {}
+        listelements: {}
+    compositeelements: []
+    listelements: {}

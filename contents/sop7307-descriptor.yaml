@@ -1,0 +1,30 @@
+id: SOP7307
+typeCode: SOP
+description: Mario Rossi - Sostituto Procuratore
+mainGroup: free
+status: PUBLIC
+viewPage: paginadettaglio
+listModel: '180'
+defaultModel: '181'
+attributes:
+  - code: titolo
+    value: null
+    values:
+      it: Mario Rossi
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: testo
+    value: null
+    values:
+      it: |
+        <p>Mario Rossi sostituto procuratore</p>
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: altre_info
+    value: null
+    values: {}
+    elements: []
+    compositeelements: []
+    listelements: {}

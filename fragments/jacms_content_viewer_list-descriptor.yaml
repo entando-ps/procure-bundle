@@ -1,0 +1,67 @@
+code: jacms_content_viewer_list
+guiCode: |
+  <#assign jacms=JspTaglibs["/jacms-aps-core"]>
+
+  <#assign wp=JspTaglibs["/aps-core"]>
+
+  <@jacms.contentList listName="contentList" titleVar="titleVar"
+
+  pageLinkVar="pageLinkVar" pageLinkDescriptionVar="pageLinkDescriptionVar" userFilterOptionsVar="userFilterOptionsVar" />
+
+  <div class="container py-2 custom-list-content">
+
+  <#if (titleVar??)>
+
+  <h2>${titleVar}</h2>
+
+  </#if>
+
+  <div class="card-deck py-2">
+
+  <@wp.freemarkerTemplateParameter var="userFilterOptionsVar" valueName="userFilterOptionsVar" removeOnEndTag=true >
+
+  <@wp.fragment code="jacms_content_viewer_list_userfilters" escapeXml=false />
+
+  </@wp.freemarkerTemplateParameter>
+
+  <#if (contentList??) && (contentList?has_content) && (contentList?size > 0)>
+
+  <@wp.pager listName="contentList" objectName="groupContent" pagerIdFromFrame=true advanced=true offset=5>
+
+  <@wp.freemarkerTemplateParameter var="group" valueName="groupContent" removeOnEndTag=true >
+
+  <#list contentList as contentId>
+
+  <#if (contentId_index >= groupContent.begin) && (contentId_index <= groupContent.end)>
+
+  <@jacms.content contentId="${contentId}" />
+
+  </#if>
+
+  </#list>
+
+  <@wp.fragment code="default_pagerBlock" escapeXml=false />
+
+  </@wp.freemarkerTemplateParameter>
+
+  </@wp.pager>
+
+  <#else>
+
+  <p class="alert alert-info"><@wp.i18n key="LIST_VIEWER_EMPTY" /></p>
+
+  </#if>
+
+  <#if (pageLinkVar??) && (pageLinkDescriptionVar??)>
+
+  <div class="mt-3 container py-2 text-right">
+          <a  aria-label="Collegamento a pagina interna - ${pageLinkDescriptionVar}"  title="${pageLinkDescriptionVar}" class="btn btn-outline-primary" href="<@wp.url page="${pageLinkVar}"/>">${pageLinkDescriptionVar}</a>
+  </div>
+
+  </#if>
+
+  <#assign contentList="">
+  <br>
+  </div>
+
+  </div>

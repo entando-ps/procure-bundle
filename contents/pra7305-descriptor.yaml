@@ -1,0 +1,30 @@
+id: PRA7305
+typeCode: PRA
+description: Mario Rossi - Procuratore Aggiunto
+mainGroup: free
+status: PUBLIC
+viewPage: paginadettaglio
+listModel: '174'
+defaultModel: '175'
+attributes:
+  - code: titolo
+    value: null
+    values:
+      it: Mario Rossi
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: testo
+    value: null
+    values:
+      it: |
+        <p>Mario Rossi procuratore aggiunto</p>
+    elements: []
+    compositeelements: []
+    listelements: {}
+  - code: altre_info
+    value: null
+    values: {}
+    elements: []
+    compositeelements: []
+    listelements: {}

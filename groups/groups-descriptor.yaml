@@ -1,0 +1,8 @@
+- code: administrators
+  name: Administrators
+- code: editore
+  name: Editore
+- code: free
+  name: Free Access
+- code: testgroup
+  name: TestGroup

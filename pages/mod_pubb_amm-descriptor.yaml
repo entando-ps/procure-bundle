@@ -1,0 +1,17 @@
+code: mod_pubb_amm
+parentCode: per_la_pubblica_amm
+titles:
+  en: Moduli
+  it: Moduli
+pageModel: redirect
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: redirect
+    config:
+      pageLink: moduli
+    pos: 0

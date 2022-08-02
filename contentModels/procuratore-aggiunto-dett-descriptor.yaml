@@ -1,0 +1,4 @@
+id: 175
+contentType: PRA
+description: Procuratore aggiunto - dett
+contentShape: "#set($idContenuto = $content.getId())\r\n\r\n\r\n<div class=\"accordion-page\">   \r\n\t<a href=\"#collapse-$idContenuto\" class=\"collapse\">$content.titolo.text</a>                \r\n\t<div style=\"display: none;\" id=\"collapse-$idContenuto\" class=\"collapsible\">\r\n\t\t<p><strong>$content.titolo.text</strong></p>\r\n\t\t$content.testo.text\r\n    $content.altre_info.text\r\n\t</div>\t\r\n</div>\r\n\r\n<br/>\r\n<div class=\"link-ricerca\">\r\n\t<p><a title=\"Vai all'elenco\" \r\n\thref=\"procuratori_aggiunti.page\">Vai all'elenco</a></p>\r\n</div>"

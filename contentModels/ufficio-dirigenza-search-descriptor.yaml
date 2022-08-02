@@ -1,0 +1,4 @@
+id: 335
+contentType: DIR
+description: Ufficio dirigenza - search
+contentShape: "<p>Responsabile: $content.responsab.text</p>\r\n#if($content.orario.text != '')\r\n<p>Orario: $content.orario.text</p>\r\n#end\r\n\r\n#if($content.mail.text != '')\r\n<p>Email: $content.mail.text</p>\r\n#end\r\n\r\n#if($content.telefono.text != '')\r\n<p>Telefono: $content.telefono.text</p>\r\n#end\r\n\r\n#if($content.fax.text != '')\r\n<p>Fax: $content.fax.text</p>\r\n#end\r\n"

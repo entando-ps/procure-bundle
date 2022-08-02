@@ -1,0 +1,45 @@
+code: dislocazione_uffici
+parentCode: sezione_procura
+titles:
+  en: Uffici
+  it: Uffici
+pageModel: internal-page
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: entando-widget-language_choose
+    config: null
+    pos: 0
+  - code: entando-widget-search_form
+    config: null
+    pos: 1
+  - code: Navigation_Bar_Settato
+    config:
+      navSpec: code(sezione_procura).subtree(1) + code(per_il_cittadino).subtree(1) + code(per_il_professionista).subtree(1)  + code(per_la_pubblica_amm).subtree(1) + code(sezione_come_fare_per).subtree(1)
+    pos: 2
+  - code: entando-widget-navigation_breadcrumbs
+    config: null
+    pos: 4
+  - code: ubicazione_uffici
+    config:
+      userFilters:
+        - attributeFilter: false
+          key: fulltext
+        - attributeFilter: true
+          key: categoria
+        - attributeFilter: true
+          key: sede
+        - attributeFilter: true
+          key: piano
+      modelId: '330'
+      maxElemForItem: '10'
+      contentType: UFF
+    pos: 5
+  - code: entando-widget-side-navigation_bar
+    config:
+      navSpec: code(sezione_procura).subtree(1)
+    pos: 6
