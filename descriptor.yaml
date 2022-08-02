@@ -1,5 +1,5 @@
-code: procure_bundle_contentType
-description: Procure - Tipi Contenuto
+code: procure_bundle
+description: Bundle Procure
 bundle-type: system-level-bundle
 components:
   contentTypes:
