@@ -1,0 +1,4 @@
+id: 13
+contentType: CTA
+description: Lista F.A.Q.
+contentShape: "<h4 class=\"card-title\">\r\n   $i18n.getLabel(\"FAQ_TITOLO\")\r\n</h4>\r\n<div id=\"lista-howto\" class=\"collapse-div mb-5\" role=\"tablist\">\r\n    #foreach ($item in $content.lista) \r\n    <div class=\"collapse-header\" id=\"headingA$item.number.value\">\r\n        <button title=\"$item.title.text\" aria-label=\"\" data-toggle=\"collapse\" data-target=\"#accordion$item.number.value\" aria-expanded=\"false\" aria-controls=\"accordion$item.number.value\">\r\n           $item.title.text\r\n        </button>\r\n    </div>\r\n    <div id=\"accordion$item.number.value\" class=\"collapse\" role=\"tabpanel\" aria-labelledby=\"headingA$item.number.value\" data-parent=\"#lista-howto\">\r\n        <div class=\"collapse-body\">\r\n           $item.abstract.text\r\n        </div>\r\n    </div>\r\n    #end\r\n</div>"

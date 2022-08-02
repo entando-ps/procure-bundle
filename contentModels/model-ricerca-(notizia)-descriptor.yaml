@@ -1,0 +1,4 @@
+id: 11111111
+contentType: AEC
+description: Model Ricerca (Notizia)
+contentShape: "<li>\r\n\t\t\t\t\t\t\t#if($content.title.text)\r\n                <a href=\"$content.getContentOnPageLink(\"paginadettaglio\")&modelId=9900\">\r\n                   \r\n                   <div class=\"it-right-zone\">\r\n                      <span class=\"text\">$content.title.text</span>\r\n                      <span class=\"it-multiple\">\r\n                        <span class=\"metadata\"></span>\r\n                        <svg class=\"icon\">\r\n                          <use xlink:href=\"/procuradiroma/resources/static/img/sprite.svg#it-chevron-right\"></use>\r\n                        </svg>\r\n                      </span>\r\n        \t\t\t\t\t\t</div>\r\n                   \r\n                </a>\r\n                #end\r\n</li>        \r\n\r\n\r\n"

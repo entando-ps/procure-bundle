@@ -1,0 +1,25 @@
+id: 14
+contentType: CTM
+description: Lista news in pagina news
+contentShape: |
+  <div class="card card-news shadow rounded">
+     <!-- <div class="img-wrapper">
+          <img class="img-fluid" data-src="" title="$content.img.text" alt="$content.img.text" src="$content.img.getImagePath('0')" data-holder-rendered="true">
+          <span class="badge badge-primary badge-pos">$content.enum.text</span>
+      </div> -->
+      <div class="card-body news-body">
+          <h5 class="card-title">
+              <a title="$content.title.text" aria-label="Collegamento a notizia - $content.title.text" class="card-body-link" href="$content.getContentOnPageLink("paginadettaglio")&modelId=55 "> $content.title.text </a>
+          </h5>
+
+          <span class="data">$content.date.shortDate</span>
+          
+          #if ($content.autore.text != "")  
+            <span class="card-signature">di $content.autore.text</span>
+          #else
+            <span class="card-signature">Autore sconosciuto</span>
+          #end
+          <p class="card-text">$content.abstract.text</p>
+      </div>
+
+  </div>

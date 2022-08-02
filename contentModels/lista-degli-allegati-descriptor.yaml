@@ -1,0 +1,4 @@
+id: 183
+contentType: CNG
+description: 'Lista degli allegati '
+contentShape: "<div class=\"link-list-wrapper multiline\">\r\n<ul class=\"d-flex flex-wrap link-list\">\r\n    #foreach ($attach in $content.allegati)\r\n    <li class=\"col-6 mt-3\">\r\n        <a class=\"list-item right-icon p-0\"\r\n           href=\"$attach.attachPath\">\r\n            <span class=\"display-4\">$attach.text</span>\r\n            \r\n            <svg class=\"icon icon-primary icon-right m-0\">\r\n            <use xlink:href=\"/procuradiroma/resources/static/img/sprite.svg#it-download\">\r\n                </use>\r\n            </svg>\r\n            \r\n        </a>\r\n    </li>\r\n    <li><span class=\"divider\"></span> \r\n     #end\r\n</ul>\r\n</div>\r\n\r\n"

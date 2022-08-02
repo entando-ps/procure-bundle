@@ -1,0 +1,4 @@
+id: 11
+contentType: CTM
+description: Storico Notizie
+contentShape: "<div class=\"card-wrapper border-bottom\">\n <div class=\"card\">\n   <div class=\"card-body px-0\">\n      <div class=\"row\">\n          <div class=\"col-7\">\n             <div class=\"category-top\">\n             <a class=\"category\" href=\"#\">Categoria 1</a>\n             <span class=\"data\">$content.date</span>\n             </div>\n          <h5 class=\"card-title big-heading\"><a href=\"#\">$content.title.text</a></h5>\n          <p class=\"card-text\">$content.abstract.text</p>\n          </div>\n         <div class=\"col-5\">\n         \t\t<img src=\"$content.img.getImagePath('0')\" title=\"img title\" alt=\"imagealt\" class=\"img-fluid\">\n         </div>\n      </div>\n   </div>\n  </div> \n</div>\n"

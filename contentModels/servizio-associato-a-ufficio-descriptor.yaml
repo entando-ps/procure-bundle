@@ -1,0 +1,4 @@
+id: 26
+contentType: SRV
+description: Servizio associato a Ufficio
+contentShape: "#set ($cat = $content.categoria.text)\r\n#set ($url = 'servizio_penale.page')\r\n\r\n#if($cat == 'civile')\r\n\t#set ($url = 'servizio_civile.page')\r\n#end\r\n#if($cat == 'altro')\r\n\t#set ($url = 'altro_servizio.page')\r\n#end\r\n#if($cat == 'per i collaboratori')\r\n\t#set ($url = 'servizio_collab.page')\r\n#end\r\n\r\n<a href=\"${url}?contentId=$content.getId()\">$content.titolo.text</a>"

@@ -1,0 +1,49 @@
+id: 32
+contentType: PRC
+description: Modello di Procedura
+contentShape: |2-
+      <div class="card-wrapper">
+          <div class="card border-0">
+              <div class="card-body2 p-1">
+                  
+                  #if($content.titolo.text != "")
+                   <h4 class="card-title">
+                     $content.titolo.text
+                   </h4> 
+                  #end
+               
+                  #if($content.COSE.text != "")
+                  <strong>COS'E'</strong><br>
+                  $content.COSE.text
+                  #end
+                  
+                  #if($content.CHI_PUO_RI.text != "")
+                  <strong>CHI PUO' RICHIEDERLO</strong><br>
+                  $content.CHI_PUO_RI.text
+                  #end
+                  
+                  #if($content.DOVE_SI_RI.text != "")
+                  <strong>DOVE SI RICHIEDE</strong><br>
+                  $content.DOVE_SI_RI.text
+                  #end
+                  
+                  #if($content.DOC_NECESS.text != "")
+                  <strong>COME SI RICHIEDE E DOCUMENTI NECESSARI</strong><br>
+                  $content.DOC_NECESS.text
+                  #end
+                  
+                  #if($content.TEMPI.text != "")
+                  <strong>TEMPI</strong><br>
+                  $content.TEMPI.text
+                  #end
+                  
+                  #if($content.COSTI.text != "")
+                  <strong>COSTI</strong><br>
+                  $content.COSTI.text
+                  #end
+                  
+              </div>
+          </div>
+      </div>
+      
+     

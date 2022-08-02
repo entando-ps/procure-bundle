@@ -1,0 +1,32 @@
+- key: CNG_ATTACHMENTS
+  titles:
+    en: Attachments
+    it: Allegati
+- key: CNG_LINKS
+  titles:
+    en: Links
+    it: Link
+- key: CNG_READ_MORE
+  titles:
+    en: View details
+    it: Continua
+- key: DLD_CATEGORIES
+  titles:
+    en: Tags
+    it: Tag
+- key: DLD_DOWNLOAD
+  titles:
+    en: Get it now
+    it: Scarica
+- key: DLD_GET_INFO
+  titles:
+    en: View details
+    it: Dettagli
+- key: FAQ_TITOLO
+  titles:
+    en: Common questions
+    it: Domande più frequenti
+- key: READ_MORE
+  titles:
+    en: View details
+    it: Continua

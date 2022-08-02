@@ -1,0 +1,35 @@
+id: 18
+contentType: CTM
+description: Lista card pagine interne
+contentShape: |-
+  <div class="card shadow rounded mb-2">
+  <div class="card-header py-1">
+  <p class="card-text orange">
+
+  <span class="text-uppercase font-weight-bold">
+    
+     #foreach ($contentCategory in $content.getCategories())
+
+     <a title="$contentCategory.title" aria-label="Collegamento a pagina interna - $contentCategory.title" class="category" href="$content.getContentOnPageLink("news_categorizzate")&modelId=55&category=$contentCategory.code ">
+    
+    $contentCategory.title 
+    
+    </a>
+                      
+     #end
+    
+  </span>
+
+    <small class="text-muted d-block">$content.date.shortDate</small>
+  </p>
+  </div>
+  <!--<div class="img-wrapper">
+   <img class="img-fluid" data-src="" alt="$content.img.text" src="$content.img.getImagePath('0')" data-holder-rendered="true">
+  </div>-->
+  <div class="card-body">
+    <h5 class="card-title">
+      <a title=" $content.title.text" aria-label="Collegamento a notizia - $content.title.text" class="card-body-link" href="$content.getContentOnPageLink("paginadettaglio")&modelId=55 "> $content.title.text </a>
+    </h5>
+    <p class="card-text">$content.abstract.text</p>
+  </div>
+  </div>

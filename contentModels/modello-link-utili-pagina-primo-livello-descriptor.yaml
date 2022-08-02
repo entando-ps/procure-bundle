@@ -1,0 +1,4 @@
+id: 17
+contentType: CTM
+description: Modello Link Utili Pagina Primo livello
+contentShape: "<div class=\"col-md-4\">\n\t<div class=\"card border rounded mb-4\">\n\t\t<img class=\"img-fluid\" data-src=\"\" alt=\"\" src=\"$content.img.getImagePath('0')\" data-holder-rendered=\"true\">\n\t\t<div class=\"card-body\">\n\t\t\t<h5 class=\"card-title\">$content.title.text</h5>\n\t\t\t<p class=\"card-text\"> $content.abstract.text </p>\n\t\t\t<a href=\"#\" type=\"button\" class=\"btn btn-outline-primary\">Vai al sito</a>\n\t\t</div>\n\t</div>\n</div>\n\n"

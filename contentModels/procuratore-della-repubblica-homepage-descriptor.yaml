@@ -1,0 +1,4 @@
+id: 178
+contentType: PRR
+description: Procuratore della Repubblica - homepage
+contentShape: "#set ( $abstract = $content.descr.text.replaceAll(\"<[^<>]+>\", \"\").trim())\r\n\r\n#if ($abstract.length() > 200)\r\n\t#set ( $abstract = \r\n  \t$abstract.substring(0, 200).replaceAll(\"&[^;]*$\",\"\").replaceAll(\"[\\.\\,\\-]+$\",\"\").concat('...') )\r\n#else\r\n\t\r\n#end\r\n\r\n#if( $abstract.length() > 0 )\r\n<p>$abstract</p>\r\n#end"

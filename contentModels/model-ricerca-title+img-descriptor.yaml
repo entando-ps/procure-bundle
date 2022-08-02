@@ -1,0 +1,4 @@
+id: 99990
+contentType: IMG
+description: Model Ricerca title+img
+contentShape: "<div class=\"search-result\">\n\t#if($content.titolo.text)\n  \t<a href=\"$content.getContentOnPageLink(\"paginadettaglio\")&modelId=101\">\n    $content.titolo.text\n    </a>\n  #end\n</div>"

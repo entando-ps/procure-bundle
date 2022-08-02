@@ -1,0 +1,4 @@
+id: 35
+contentType: SRV
+description: Servizio per l'utenza - Dettaglio
+contentShape: "<div class=\"row\">\r\n\t #if ($info.getCurrentPage() == 'Page: paginadettaglio')\r\n   \t\t<h3>$content.titolo.text</h3>\r\n   #end \r\n   <div class=\"col-sm-12\">\r\n  \t<h3>COS' &Egrave;</h3>\r\n   </div>\r\n   <div class=\"col-sm-12\">\r\n   \r\n  \t$content.cosa_e.text\r\n   </div>\r\n</div>\r\n<div class=\"row\">\r\n   <div class=\"col-sm-6\">\r\n  \t<h3>UFFICIO INCARICATO</h3>\r\n     \t<jacms:content contentId='<%=((LinkAttribute)content.getAttribute(\"cnt_uff\")).getSymbolicLink().getContentDest() %>' modelId=\"21\"/>\r\n   </div>\r\n   <div class=\"col-sm-6\">\r\n  \t<h3>COME ARRIVARE</h3>\r\n   \r\n  \t$content.cosa_e.text\r\n   </div>\r\n</div>"

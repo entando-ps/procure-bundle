@@ -1,0 +1,27 @@
+id: 10003
+contentType: DLD
+description: Full - Default
+contentShape: |-
+  <article>
+  <h1>$content.Title.text</a></h1>
+  #if($content.categories.size() >= 1)
+  <p><span class="label">$i18n.getLabel("DLD_CATEGORIES"):</span>
+  #foreach($categ in $content.categories)
+  <span class="label label-info">$categ.title</span>
+  #end
+  </p>
+  #end
+  #if ( $content.Picture.getImagePath("0") != "" )
+  <figure class="well well-small text-center">
+    <img src="$content.Picture.getImagePath("0")" alt="$content.Picture.text" />
+    #if ( $content.Caption.text != "" )
+    <figcaption><p class="margin-medium-all">$content.Caption.text</p></figcaption>
+    #end
+  </figure>
+  #end
+  #if ( $content.LongDescr.text != "" )
+  $content.LongDescr.text
+  #end
+  <p><a class="btn btn-primary" href="$content.File.attachPath">$i18n.getLabel("DLD_DOWNLOAD")&nbsp;<i class="icon-download-alt icon-white"></i></a></p>
+  </article>
+xt != \"\" )\r\n$content.MainBody.text\r\n#end\r\n#if ($content.Attaches.size()>0)\r\n  <h2>$i18n.getLabel(\"CNG_ATTACHMENTS\")</h2>\r\n  <ul>\r\n#foreach ($item in $content.Attaches )\r\n    <li><a href=\"$item.attachPath\">$item.text</a></li>\r\n  #end\r\n  </ul>\r\n#end\r\n#if ($content.Links.size()>0)\r\n  <h2>$i18n.getLabel(\"CNG_LINKS\")</h2>\r\n  <ul>\r\n  #foreach ($item in $content.Links)\r\n    <li><a href=\"$item.destination\">$item.text</a></li>\r\n  #end\r\n  </ul>\r\n#end\r\n</article>"

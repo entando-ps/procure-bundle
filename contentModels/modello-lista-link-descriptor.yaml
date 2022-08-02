@@ -1,0 +1,4 @@
+id: 10
+contentType: CTA
+description: Modello Lista Link
+contentShape: "<div class=\"card-wrapper\">\r\n\t\t<div class=\"card border-0\">\r\n\t\t\t<div class=\"card-body p-3\">\r\n\t\t\t\t<h3>$content.title.text</h3>\r\n\t\t\t\t<div class=\"link-list-wrapper multiline\">\r\n\t\t\t\t\t<ul class=\"d-flex flex-wrap link-list\">\r\n\t\t\t\t\t\t#foreach ($item in $content.lista)\r\n\t\t\t\t\t\t<li class=\"col-6 mt-3\"><a class=\"list-item right-icon p-0\"\r\n\t\t\t\t\t\t\thref=\"$item.link.destination\">\r\n              <span class=\"display-4\">$item.title.text</span>\r\n              <svg class=\"icon icon-primary icon-right m-0\">\r\n              <use xlink:href=\"/procuradiroma/resources/static/img/sprite.svg#it-chevron-right\"></use>\r\n              </svg>\r\n\r\n\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t<li><span class=\"divider\"></span> #end\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n\t</div>\r\n\t</div>\r\n"
