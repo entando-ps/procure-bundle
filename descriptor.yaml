@@ -95,7 +95,7 @@ components:
     - contentModels/avvisi-eventi-comunicati-dett-descriptor.yaml
     - contentModels/lista-news-con-search-descriptor.yaml
     - contentModels/avvisi-eventi-comunicati-home-descriptor.yaml
-    - contentModels/modello-notizia-descriptor.yaml
+#    - contentModels/modello-notizia-descriptor.yaml
     - contentModels/model-ricerca-(generic-content)-descriptor.yaml
     - contentModels/composizione-descriptor.yaml
     - contentModels/full-default-descriptor.yaml
