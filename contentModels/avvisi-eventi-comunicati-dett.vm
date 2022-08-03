@@ -1,0 +1,36 @@
+<div class="section-page clearfix">
+	<h3>$content.titolo.text</h3>
+	<p>$content.descr.text</p>
+
+	<br/>
+	#set ($tipologia = $content.tipologia.text )
+	#set ($tipologiaLength = $content.tipologia.text.length() )
+	#set ($firstChar = $tipologia.substring(0,1).toUpperCase() )
+	#set ($otherChars = $tipologia.substring(1, $tipologiaLength).toLowerCase() )
+	<p><strong>Tipologia: </strong>${firstChar}${otherChars}</p>
+	<p><strong>Data: </strong>$content.data.getFormattedDate("dd/MM/yyyy")</p>
+</div>
+
+#if($content.allegati.size() > 0 )
+		
+		#foreach ($allegato in $content.allegati)
+			#set ( $pos = $allegato.resource.instance.fileName.lastIndexOf('.') + 1 )
+			#set ( $doctype = $allegato.resource.instance.fileName.substring( $pos ) )
+	#*
+	*#
+		  <a title="scarica $doctype" aria-label="Collegamento a documento - $doctype - Scarica documento" target="_blank" href="$allegato.attachPath" class="callout-more-download">
+         <svg class="icon icon-primary icon-right m-0">
+                     <use xlink:href="/procuradiroma/resources/static/img/sprite.svg#it-download">
+                     </use>
+                   </svg>
+         $allegato.resource.instance.fileName
+      </a>
+      #end
+		
+    #end
+
+<br/><br/>
+<div class="link-ricerca">
+	<p><a title="Vai all'elenco" 
+	href="avvisi_eventi_comunicati.page">Vai all'elenco</a></p>
+</div>

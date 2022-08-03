@@ -1,0 +1,21 @@
+<div class="it-hero-wrapper it-hero-small-size it-text-centered">
+<div class="img-responsive-wrapper">
+	<div class="img-responsive">
+  	<div class="img-wrapper">
+        <img src="$content.img.getImagePath('0')" title="$content.img.text" alt="$content.img.text">
+     </div>
+	</div>
+</div>
+
+<div class="it-overlay it-hero-text-wrapper bg-dark">                   
+	<h1 class="no_toc">$content.title.text</h1>
+	<p class="d-none d-lg-block">$content.abstract.text</p>
+   <div class="it-btn-container">
+   		#if ($content.link) 	
+       <a aria-label="$i18n.getLabel("READ_MORE") - $content.title.text" title="$i18n.getLabel("READ_MORE") - $content.title.text" class="btn btn-sm btn-secondary" href="$content.link.destination">$i18n.getLabel("READ_MORE")</a>
+       #else
+   	   <a aria-label="$i18n.getLabel("READ_MORE") - $content.title.text" title="$i18n.getLabel("READ_MORE") - $content.title.text" class="btn btn-sm btn-secondary" href="$content.getContentOnPageLink("paginadettaglio")&modelId=55">$i18n.getLabel("READ_MORE")</a>
+       #end
+   </div>
+</div>
+</div>

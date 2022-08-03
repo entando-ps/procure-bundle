@@ -1,4 +1,4 @@
 id: 41
 contentType: AUD
 description: Aule udienza - lista
-contentShape: "#set($idContenuto = $content.getId())\r\n<tr>\r\n\t<td>\r\n  \t$content.titolo.text\r\n    ##<a href=\"aud.page?contentId=$idContenuto\" title=\"\" tabindex=\"\">$content.titolo.text</a>\r\n  </td>\r\n\t<td>$content.sede.text</td>\r\n  <td>$content.piano.text</td>\r\n  <td>$content.stanza.text</td>\r\n</tr>"
+contentShapePath: aule-udienza-lista.vm

@@ -1,0 +1,16 @@
+#set($idContenuto_ = $content.getId())
+#set($pos = $idContenuto_.lastIndexOf('@'))
+#set($idContenuto = $idContenuto_.substring(3, $pos))
+
+<div class="accordion-page">   
+	<a href="#collapse-$idContenuto" class="collapse">$content.titolo.text</a>                
+	<div style="display: none;" id="collapse-$idContenuto" class="collapsible">
+		$content.testo.text
+	</div>	
+</div>
+
+<br/>
+<div class="link-ricerca">
+	<p><a title="Vai all'elenco" 
+	href="gruppi_lavoro.page">Vai all'elenco</a></p>
+</div>

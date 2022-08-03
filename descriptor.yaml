@@ -104,7 +104,7 @@ components:
     - contentModels/modello-statistica-descriptor.yaml
     - contentModels/modello-procedura-concorsuale-descriptor.yaml
     - contentModels/lists-default-descriptor.yaml
-    - contentModels/hero-unit-+-picture-descriptor.yaml
+    - contentModels/hero-unit-picture-descriptor.yaml
     - contentModels/lists-picture-descriptor.yaml
     - contentModels/full-default-img-100-descriptor.yaml
     - contentModels/lists-default-descriptor.yaml

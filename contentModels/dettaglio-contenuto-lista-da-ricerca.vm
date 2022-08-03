@@ -1,0 +1,87 @@
+<!-- contenuto glossario -->
+#if($content.title.text=="Glossario" || $content.title.text=="glossario")
+	<h2 class="border-bottom">
+		$content.title.text 
+	</h2>
+  <div id="lista-howto" class="collapse-div mb-5" role="tablist">
+    #foreach ($item in $content.lista) 
+    <div class="collapse-header" id="headingA$item.number.value">
+        <button data-toggle="collapse" data-target="#accordion$item.number.value" aria-expanded="false" aria-controls="accordion$item.number.value">
+           $item.title.text
+        </button>
+    </div>
+    <div id="accordion$item.number.value" class="collapse" role="tabpanel" aria-labelledby="headingA$item.number.value" data-parent="#lista-howto">
+        <div class="collapse-body">
+           $item.abstract.text
+        </div>
+    </div>
+    #end
+  </div>
+#end
+
+<!-- contenuto FAQ - Domande frequenti -->
+#if($content.title.text=="FAQ - Domande frequenti")
+	#if ($content.title.text)
+	<h2 class="border-bottom">
+		$content.title.text 
+	</h2>
+  #end
+  <div id="lista-howto" class="collapse-div mb-5" role="tablist">
+    #foreach ($item in $content.lista) 
+    <div class="collapse-header" id="headingA$item.number.value">
+        <button data-toggle="collapse" data-target="#accordion$item.number.value" aria-expanded="false" aria-controls="accordion$item.number.value">
+           $item.title.text
+        </button>
+    </div>
+    <div id="accordion$item.number.value" class="collapse" role="tabpanel" aria-labelledby="headingA$item.number.value" data-parent="#lista-howto">
+        <div class="collapse-body">
+           $item.abstract.text
+        </div>
+    </div>
+    #end
+  </div>
+  
+#else
+
+<!-- altri contenuti di tipo lista -->
+	#if ($content.title.text && $content.title.text!="Glossario" && $content.title.text!="glossario" && $content.title.text=="FAQ - Domande frequenti")
+	<h2 class="border-bottom">
+		 $content.title.text 
+	</h2>
+  #end
+  #if($content.Title.text)
+  <h2 class="border-bottom">		
+    $content.Title.text
+	</h2>
+  #end
+  
+	<article>
+		#if ($content.Picture.getImagePath("0") && $content.Picture.getImagePath("0") != "" )
+			<figure class="well well-small text-center">
+			<img class="img-fluid" src="$content.Picture.getImagePath("0")" alt="$content.Picture.text" />
+				#if ($content.Caption.text && $content.Caption.text != "" )
+					<figcaption><p class="margin-medium-all">$content.Caption.text</p></figcaption>
+				#end
+			</figure>
+		#end
+		#if ($content.MainBody.text && $content.MainBody.text != "" )
+      $content.MainBody.text
+		#end
+		#if ($content.Attaches.size()>0)
+  		<h2>$i18n.getLabel("CNG_ATTACHMENTS")</h2>
+  		<ul>
+			#foreach ($item in $content.Attaches )
+    		<li><a href="$item.attachPath">$item.text</a></li>
+  		#end
+  		</ul>
+		#end
+		#if ($content.Links.size()>0)
+  		<h2>$i18n.getLabel("CNG_LINKS")</h2>
+  		<ul>
+  		#foreach ($item in $content.Links)
+    		<li><a href="$item.destination">$item.text</a></li>
+  		#end
+  		</ul>
+		#end
+	</article>
+#end

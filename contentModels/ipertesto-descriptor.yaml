@@ -1,13 +1,4 @@
 id: 103
 contentType: IPT
 description: ipertesto
-contentShape: |+
-  <div class="card-wrapper">
-      <div class="card border-0">
-          <div class="card-body p-1">        
-              $content.ipertesto.text                                                                         
-          </div>
-      </div>
-  </div>
-
-
+contentShapePath: ipertesto.vm

@@ -1,0 +1,10 @@
+#set($idContenuto = $content.getId())
+<tr>
+	<td>
+  	$content.titolo.text
+    ##<a href="aud.page?contentId=$idContenuto" title="" tabindex="">$content.titolo.text</a>
+  </td>
+	<td>$content.sede.text</td>
+  <td>$content.piano.text</td>
+  <td>$content.stanza.text</td>
+</tr>

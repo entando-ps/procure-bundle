@@ -1,4 +1,4 @@
 id: 171
 contentType: GRL
 description: Gruppi di lavoro - search
-contentShape: "<li>\r\n\t#if($content.titolo.text)\r\n  <a href=\"$content.getContentOnPageLink(\"paginadettaglio\")&modelId=172\">\r\n     <div class=\"it-right-zone\">\r\n         <span class=\"text\">$content.titolo.text</span>\r\n         <span class=\"it-multiple\">\r\n         <span class=\"metadata\"></span>\r\n            <svg class=\"icon\">\r\n             <use xlink:href=\"/procuradiroma/resources/static/img/sprite.svg#it-chevron-right\"></use>\r\n            </svg>\r\n         </span>\r\n     </div>\r\n  </a>\r\n  #end\r\n</li>       "
+contentShapePath: gruppi-di-lavoro-search.vm

@@ -1,0 +1,28 @@
+<div id="accordion">
+	<div class="accordion-page">   
+		<a href="#collapse-1" class="collapse">$content.titolo.text</a>                
+		<div id="collapse-1" class="collapsible clearfix" style="display: block;">
+			<div class="col-md-2">
+				<div id="ubicazione-ufficio" class="clearfix ">
+					<div id="col-sm-3">
+          #if($content.immagine.resource)
+          	<img src='$content.immagine.getImagePath("0")'></img>
+          #end
+					</div>
+					<div id="col-sm-2">
+						<a href="#" title="" tabindex="">Come arrivare</a>
+						<p><strong>Sede:</strong>$content.sede.text</p>
+          #if($content.piano.text != '')
+						<p><strong>Piano:</strong>$content.piano.text</p>
+          #end
+					#if($content.stanza.text != '')
+						<p><strong>Stanza:</strong>$content.stanza.text</p>
+					#end
+					</div>
+				</div>		                   	 
+			</div>
+			$content.descr.text
+		</div>	
+	</div>
+</div>
+

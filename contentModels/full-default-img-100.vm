@@ -1,0 +1,55 @@
+<style>
+	.well img {
+    width: 100%;
+  }
+</style>
+<article>
+ <h4>
+     $content.Title.text
+</h4>
+#if ($content.Picture.getImagePath("0") != "" )
+<figure class="well well-small text-center">
+  <img src="$content.Picture.getImagePath("0")" alt="$content.Picture.text" />
+  #if ($content.Caption.text != "" )
+  <figcaption><p class="margin-medium-all">$content.Caption.text</p></figcaption>
+  #end
+</figure>
+#end
+#if ($content.MainBody.text != "" )
+$content.MainBody.text
+#end
+#if ($content.Attaches.size()>0)
+  <h2>$i18n.getLabel("CNG_ATTACHMENTS")</h2>
+  
+  #foreach ($allegato in $content.Attaches)
+			#set ( $pos = $allegato.resource.instance.fileName.lastIndexOf('.') + 1 )
+			#set ( $doctype = $allegato.resource.instance.fileName.substring( $pos ) )
+	
+		  <a title="scarica $doctype" aria-label="Collegamento a documento - $doctype - Scarica documento" target="_blank" href="$allegato.attachPath" class="callout-more-download">
+         <svg class="icon icon-primary icon-right m-0">
+                     <use xlink:href="/procuradiroma/resources/static/img/sprite.svg#it-download">
+                     </use>
+                   </svg>
+         $allegato.resource.instance.fileName
+      </a>
+      #end
+ 
+#end
+
+
+
+  #foreach($item in $content.lista_comp)
+     
+     $item.testo.text
+     
+      
+      <a href="$item.link.destination">
+      	<div class="it-right-zone py-3">
+      		<span class="text">$item.link.text</span>
+      	</div> 
+      </a>
+     <img class="" src="$item.immagine.getImagePath('0')" alt="$item.immagine.text">
+   
+   #end
+
+</article>

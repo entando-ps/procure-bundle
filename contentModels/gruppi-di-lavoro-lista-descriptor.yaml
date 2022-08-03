@@ -1,4 +1,4 @@
 id: 170
 contentType: GRL
 description: Gruppi di lavoro - lista
-contentShape: "#set($idContenuto = $content.getId())\r\n\r\n<div class=\"row-mod\" style=\"border-bottom:1px solid grey; margin-bottom:10px\">\r\n    <div class=\"col-sm12\" >\r\n\t\t\t <b>$content.titolo.text</b><br />\r\n       <span style=\"font-size:14px\"><i>$content.testo.text</i></span>\r\n   </div>\r\n</div>"
+contentShapePath: gruppi-di-lavoro-lista.vm

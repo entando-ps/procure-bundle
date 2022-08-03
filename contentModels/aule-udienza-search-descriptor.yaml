@@ -1,4 +1,4 @@
 id: 42
 contentType: AUD
 description: Aule udienza - search
-contentShape: "#set ( $abstract = $content.descr.text.replaceAll(\"<[^<>]+>\", \"\").trim())\r\n\r\n#if ($abstract.length() > 260)\r\n\t#set ( $abstract = $abstract.substring(0, 260).replaceAll(\"&[^;]*$\",\"\").concat('...') )\r\n#end\r\n\r\n#if ($abstract != \"\")\r\n\t<p>$abstract</p>\r\n#end"
+contentShapePath: aule-udienza-search.vm

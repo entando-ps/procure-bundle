@@ -1,0 +1,9 @@
+#set ( $abstract = $content.descr.text.replaceAll("<[^<>]+>", "").trim())
+
+#if ($abstract.length() > 260)
+	#set ( $abstract = $abstract.substring(0, 260).replaceAll("&[^;]*$","").concat('...') )
+#end
+
+#if ($abstract != "")
+	<p>$abstract</p>
+#end

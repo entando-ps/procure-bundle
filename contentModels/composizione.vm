@@ -1,0 +1,47 @@
+#if($info.getCurrentPage().code=="paginadettaglio" && $content.title.text!="")
+<h2 class="border-bottom">
+$content.title.text
+</h2>
+#end
+
+#foreach($item in $content.contComp)
+       
+                #if($item.title.text)
+                 <h3 class="card-title">
+                   $item.title.text
+                 </h3> 
+                #end
+             
+                #if($item.text.text!="")
+                	$item.text.text
+                #end
+                
+                #if($item.img.getImagePath('0')!="")
+                	<img class="img-fluid" src="$item.img.getImagePath('0')" alt="$item.img.text">
+                #end
+                
+                #if($item.link.destination != "" && $item.link.destination.contains("http"))
+                 <a title="$item.link.text" target="_blank" aria-label="Collegamento a sito esterno - $item.link.text - Apertura in nuova scheda" href="$item.link.destination">
+                   <div class="it-right-zone py-3">
+                     <span class="text">$item.link.text</span>
+                   </div> 
+                 </a>
+                 #elseif($item.link.destination != "" && !$item.link.destination.contains("http"))
+                 	<a title="$item.link.text"  aria-label="Collegamento a pagina - $item.link.text" href="$item.link.destination">
+                   <div class="it-right-zone py-3">
+                     <span class="text">$item.link.text</span>
+                   </div> 
+                 </a>
+                #end
+   	#if($item.allegato.attachPath != "")
+                 <a target="_blank" class="font-weight-bold" title="$item.allegato.text" aria-label="Apertura file - $item.allegato.text - formato $item.allegato.attachPath.substring($item.allegato.attachPath.lastIndexOf('.')).replace('.','') - Apertura in nuova scheda" href="$item.allegato.attachPath">
+                   <span class="">$item.allegato.text</span>
+                   <svg class="icon icon-primary icon-right m-0">
+                     <use xlink:href="$info.getConfigParameter("resourceRootURL")static/img/sprite.svg#it-download">
+                     </use>
+                   </svg>
+                 </a>
+                 	<br/>
+                #end
+  
+#end

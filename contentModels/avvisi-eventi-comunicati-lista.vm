@@ -1,0 +1,28 @@
+<hr>
+<div class="row">
+    <div class="col-sm-2"><b><b>$content.data.getFormattedDate("dd/MM/yyyy") </b></b></div>
+    <div class="col-sm-3"> $content.tipologia.text </div>
+    <div class="col-sm-7"> <b>$content.titolo.text</b> </div>
+</div>
+<div class="row-mod">
+    <div class="col-sm12">
+        $content.descr.text 
+	#if($content.allegati.size() > 0 )
+		
+		#foreach ($allegato in $content.allegati)
+			#set ( $pos = $allegato.resource.instance.fileName.lastIndexOf('.') + 1 )
+			#set ( $doctype = $allegato.resource.instance.fileName.substring( $pos ) )
+	#*
+	*#
+		  <a title="scarica $doctype" aria-label="Collegamento a documento - $doctype - Scarica documento" target="_blank" href="$allegato.attachPath" class="callout-more-download">
+         <svg class="icon icon-primary icon-right m-0">
+                     <use xlink:href="/procuradiroma/resources/static/img/sprite.svg#it-download">
+                     </use>
+                   </svg>
+         $allegato.resource.instance.fileName
+      </a>
+      #end
+		
+    #end
+    </div>
+</div>

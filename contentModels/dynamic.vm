@@ -1,0 +1,22 @@
+<div class="card-wrapper">
+    <div class="card border-0">
+        <div class="card-body p-1">
+            <h3 class="card-title">
+              $content.Title.text
+            </h3>         
+            $content.MainBody.text                                                                         
+        </div>
+    </div>
+</div>
+
+
+
+  #foreach($item in $content.lista_comp)
+     
+     $item.testo.text
+     <a href="$item.link.destination">
+     	<span class="text">$item.link.text</span>
+     </a>
+     <img class="" src="$item.immagine.getImagePath('0')" alt="$item.immagine.text">
+  
+   #end

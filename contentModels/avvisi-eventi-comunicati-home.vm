@@ -1,0 +1,26 @@
+<div class="card shadow py-2">
+    <div class="card-header">
+        <h6 class="card-text orange">
+            <span class="text-uppercase font-weight-bold">
+                $content.tipologia.text
+        </span>
+        <small class="text-muted d-block">
+            $content.data.getFormattedDate("dd/MM/yyyy")
+        </small>
+    </h6>
+	</div>
+    <div class="card-body">
+        <h5 class="card-title">
+            <a title="$content.titolo.text" aria-label="Collegamento a notizia - $content.titolo.text" class="card-body-link" href="$content.getContentOnPageLink("paginadettaglio")&modelId=1503 ">
+               $content.titolo.text
+        </a>
+    </h5>
+    #set ( $abstract = $content.descr.text.replaceAll("<[^<>]+>", "").trim())
+    #if ($abstract.length() > 200)
+	     #set ( $abstract = $abstract.substring(0, 200).replaceAll("&[^;]*$","").concat('...') )
+    #end	
+    <p class="card-text">
+        $abstract
+    </p>
+    </div>
+</div>

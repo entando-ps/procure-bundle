@@ -1,0 +1,67 @@
+<style>
+	.servizio {
+		font-size: 18px !important;
+	}
+	.h1_title {
+		border-bottom: 1px solid #b1b1b3!important;
+    font-size: 22px;
+    margin-bottom:20px;
+    font-size: 1.777rem;
+    line-height: 1.25;
+	}
+	.h2_parag {
+		font-size: 18px;
+    font-size: 1.38rem;
+    line-height: 1.25;
+
+	}
+	
+</style>
+<div class="servizio">
+	<div class="col-sm-12">
+		<h1 class="h1_title">$content.titolo.text</h1>
+	</div>
+  #foreach ($item in $content.altre_info )
+    <div class="col-sm-12">
+		   <h2 class="h2_parag">$item.titolo.text</h2>
+       $item.descr.text
+	  </div>
+  #end
+  
+   #if ($content.cnts_uff && $content.cnts_uff.size() > 0)
+    
+  	<div class="col-sm-12">
+    	<h2 class="h2_parag">Uffici incaricati</h2>
+         #foreach ($item in $content.cnts_uff )
+       <div class="row-mod" style="margin-bottom: 10px">
+					<div class="col-sm12">
+						<a title="$item.text" aria-label="Collegamento a contenuto - $item.text" target="_blank" href="$item.destination" class="callout-more-download">
+							- $item.text
+						</a>
+					</div>
+				</div>
+     #end
+         
+		</div>
+  #end
+  
+  
+  #if ($content.moduli.size() > 0)
+  	<div class="col-sm-12">
+    	<h2 class="h2_parag">Scarica i moduli</h2>
+     #foreach ($item in $content.moduli )
+       <div class="row-mod" style="margin-bottom: 10px">
+					<div class="col-sm12">
+						<a title="$item.text" aria-label="Collegamento a documento - $item.text - Scarica documento" target="_blank" href="$item.attachPath" class="callout-more-download">
+							<svg class="icon icon-primary">
+								<use xlink:href="/cmsresources/static/img/sprite.svg#it-download"></use>
+							</svg>
+							$item.text
+						</a>
+					</div>
+				</div>
+     #end
+		</div>
+  #end
+ 
+</div>

@@ -1,0 +1,8 @@
+#set($idContenuto = $content.getId())
+
+<div class="row-mod" style="border-bottom:1px solid grey; margin-bottom:10px">
+    <div class="col-sm12" >
+			 <b>$content.titolo.text</b><br />
+       <span style="font-size:14px"><i>$content.testo.text</i></span>
+   </div>
+</div>

@@ -1,0 +1,15 @@
+<li>
+	#if($content.titolo.text)
+  <a href="$content.getContentOnPageLink("paginadettaglio")&modelId=172">
+     <div class="it-right-zone">
+         <span class="text">$content.titolo.text</span>
+         <span class="it-multiple">
+         <span class="metadata"></span>
+            <svg class="icon">
+             <use xlink:href="/procuradiroma/resources/static/img/sprite.svg#it-chevron-right"></use>
+            </svg>
+         </span>
+     </div>
+  </a>
+  #end
+</li>
