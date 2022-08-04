@@ -98,11 +98,12 @@ components:
 #    - contentModels/modello-notizia-descriptor.yaml
     - contentModels/model-ricerca-(generic-content)-descriptor.yaml
     - contentModels/composizione-descriptor.yaml
+    - contentModels/cng-full-default-descriptor.yaml
     - contentModels/modello-tirocinio-formativo-descriptor.yaml
     - contentModels/full-default-descriptor.yaml
     - contentModels/modello-statistica-descriptor.yaml
     - contentModels/modello-procedura-concorsuale-descriptor.yaml
-    - contentModels/lists-default-descriptor.yaml
+    - contentModels/cng-lists-default-descriptor.yaml
     - contentModels/hero-unit-picture-descriptor.yaml
     - contentModels/lists-picture-descriptor.yaml
     - contentModels/full-default-img-100-descriptor.yaml

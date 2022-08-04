@@ -1,0 +1,41 @@
+#if($info.getCurrentPage().code=="paginadettaglio" && $content.Title.text!="")
+	#if($content.Title.text=="Procuratori Aggiunti")
+ 	<script>location.href='procuratori_aggiunti.page'</script>
+	#end
+  #if($content.Title.text=="Sostituti Procuratori")
+ 	<script>location.href='sostituti_procuratori.page'</script>
+	#end
+<h2 class="border-bottom">
+	$content.Title.text 
+</h2>
+#end
+
+<article>
+#if ($content.Picture.getImagePath("0") != "" )
+<figure class="well well-small text-center">
+  <img class="img-fluid" src="$content.Picture.getImagePath("0")" alt="$content.Picture.text" />
+  #if ($content.Caption.text != "" )
+  <figcaption><p class="margin-medium-all">$content.Caption.text</p></figcaption>
+  #end
+</figure>
+#end
+#if ($content.MainBody.text != "" )
+$content.MainBody.text
+#end
+#if ($content.Attaches.size()>0)
+  <h2>$i18n.getLabel("CNG_ATTACHMENTS")</h2>
+  <ul>
+#foreach ($item in $content.Attaches )
+    <li><a href="$item.attachPath">$item.text</a></li>
+  #end
+  </ul>
+#end
+#if ($content.Links.size()>0)
+  <h2>$i18n.getLabel("CNG_LINKS")</h2>
+  <ul>
+  #foreach ($item in $content.Links)
+    <li><a href="$item.destination">$item.text</a></li>
+  #end
+  </ul>
+#end
+</article>
