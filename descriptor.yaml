@@ -98,7 +98,6 @@ components:
 #    - contentModels/modello-notizia-descriptor.yaml
     - contentModels/model-ricerca-(generic-content)-descriptor.yaml
     - contentModels/composizione-descriptor.yaml
-    - contentModels/full-default-descriptor.yaml
     - contentModels/modello-tirocinio-formativo-descriptor.yaml
     - contentModels/full-default-descriptor.yaml
     - contentModels/modello-statistica-descriptor.yaml
