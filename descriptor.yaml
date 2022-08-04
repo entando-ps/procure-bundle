@@ -5,7 +5,7 @@ components:
   contentTypes:
     - contentTypes/aec-descriptor.yaml
     - contentTypes/aud-descriptor.yaml
-    - contentTypes/bnr-descriptor.yaml
+#    - contentTypes/bnr-descriptor.yaml
     - contentTypes/cng-descriptor.yaml
     - contentTypes/con-descriptor.yaml
     - contentTypes/cta-descriptor.yaml

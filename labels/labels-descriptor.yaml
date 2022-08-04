@@ -1,15 +1,3 @@
-- key: CNG_ATTACHMENTS
-  titles:
-    en: Attachments
-    it: Allegati
-- key: CNG_LINKS
-  titles:
-    en: Links
-    it: Link
-- key: CNG_READ_MORE
-  titles:
-    en: View details
-    it: Continua
 - key: DLD_CATEGORIES
   titles:
     en: Tags
